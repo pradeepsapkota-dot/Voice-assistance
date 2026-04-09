@@ -98,5 +98,18 @@ c.execute("SELECT mobile_no FROM contacts WHERE LOWER(name) LIKE ? OR LOWER(name
 results = c.fetchall()
 print(results[0][0])"""
 
+q= "INSERT INTO contacts VALUES (null, 'Lotus', '+35844934499', null)"
+c.execute(q)
+conn.commit()
+conn.close()
 
+"""query = "DELETE FROM contacts WHERE name = 'Lotus'"
+c.execute(query)
+conn.commit()"""
 
+query = """CREATE TABLE IF NOT EXISTS contacts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    phone TEXT UNIQUE,  -- prevents duplicate phone numbers
+    email TEXT
+)"""
