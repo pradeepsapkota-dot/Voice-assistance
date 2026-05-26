@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+
+# Python cache
+*.pyc
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Private data
+contacts.csv
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Env & venv
+.env
+env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+
+# Auth / session data
+cookie.json
+cookies.json
+*.cookie
+
