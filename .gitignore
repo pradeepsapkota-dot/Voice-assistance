@@ -27,7 +27,7 @@ contacts.csv
 env/
 venv/
 .venv/
-
+envluffy/
 # Python cache
 __pycache__/
 
