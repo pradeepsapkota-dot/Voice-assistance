@@ -94,7 +94,7 @@ def allcommands(message = 1):
             from engine.feature import geminai
             geminai(query)
     except Exception as e:
-        print(f"Error occurred: {e}") # This will tell you EXACTLY what is failing
+        print(f"Error occurred:") # This will tell you EXACTLY what is failing
 
 
     eel.ShowHood()
