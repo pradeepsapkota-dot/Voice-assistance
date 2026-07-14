@@ -21,6 +21,7 @@ contacts.csv
 *.db-journal
 *.db-shm
 *.db-wal
+config.py
 
 # Env & venv
 .env

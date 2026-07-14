@@ -1,4 +1,6 @@
 import re 
+from bs4 import BeautifulSoup
+import markdown2
 
 
 
@@ -29,7 +31,10 @@ def remove_words(input_string, words_to_remove):
 
     return result_string
 
-
+def markdown_to_text(md):
+    html = markdown2.markdown(md)
+    soup = BeautifulSoup(html, "html.parser")
+    return soup.get_text().strip()
 
 
 

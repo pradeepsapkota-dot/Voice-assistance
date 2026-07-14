@@ -91,9 +91,8 @@ def allcommands(message = 1):
                 whatsApp(contact_no, query, flag, name)
 
         else:
-            from engine.feature import chatBot
-            response = chatBot(query)
-            print("Chatbot response: " + response)
+            from engine.feature import geminai
+            geminai(query)
     except Exception as e:
         print(f"Error occurred: {e}") # This will tell you EXACTLY what is failing
 
